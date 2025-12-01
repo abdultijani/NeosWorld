@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Browser tab title -->
+  <title>Neo's World</title>
+
+  <!-- GLightbox main stylesheet for video popup/lightbox functionality -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <!-- Google Fonts preconnect for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts: Kablammo & Lato -->
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Additional Google Font: Advent Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom site stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===========================
+       HEADER / SITE TITLE
+  ============================== -->
+  <header>
+    <!-- Clicking header returns to home page -->
+    <a href="index.html" class="header-link">
+
+      <!-- Fun animated title text using wiggle animations -->
+      <h1 class="marquee-text">
+        <span class="wiggle">🚘</span> 
+        <span class="wiggle">👶🏾</span> 
+        N e o's 
+        <span class="wiggle">🚗</span> 
+        W o r l d 
+        <span class="wiggle">👶🏾</span> 
+        <span class="wiggle">🚘</span>
+      </h1>
+
+    </a>
+  </header>
+
+
+  <!-- ===========================
+       MAIN CONTENT
+  ============================== -->
+  <main class="container">
+
+    <!-- ===========================
+         NAVIGATION MENU (5 TABS)
+    ============================== -->
+    <nav class="main-nav">
+
+      <!-- Each nav item is a styled box inside a clickable link -->
+      <a href="index.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">🏠 Home 🏠</span>
+        </div>
+      </a>
+
+      <a href="AboutMe.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">👶🏾 About Me 👶🏾</span>
+        </div>
+      </a>
+
+      <a href="PhotoGallery.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">📸 Photo Gallery 📷</span>
+        </div>
+      </a>
+
+      <!-- Active page is highlighted (Milestones) -->
+      <a href="Milestones.html" class="active">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">🏆 Milestones 🥇</span>
+        </div>
+      </a>
+
+      <a href="Favorites.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">⭐ Favorites ❤️</span>
+        </div>
+      </a>
+
+      <!-- Clears flex/float depending on CSS design -->
+      <div class="clear"></div>
+    </nav>
+
+
+
+    <!-- ===========================
+         VIDEO GRID (GLightbox Thumbnails)
+    ============================== -->
+    <div class="video-grid">
+
+      <!-- ===========================
+           VIDEO 1
+      ============================== -->
+      <a 
+        href="IMG_7104.MOV"
+        class="glightbox"
+        data-type="video"
+        data-title="Oh happy day"
+      >
+        <figure>
+          <!-- Thumbnail image -->
+          <img src="newborn.jpeg" alt="Video 1 Thumbnail">
+
+          <!-- Play button overlay -->
+          <span class="play-icon">▶</span>
+
+          <!-- Caption below each thumbnail -->
+          <figcaption>10.23.21 Going home from hospital</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 2
+      ============================== -->
+      <a 
+        href="IMG_7285.MOV"
+        class="glightbox"
+        data-type="video"
+        data-title="What's this weird stuff I feel on my head?"
+      >
+        <figure>
+          <img src="IMG_EB6A8C1CC84C-1.jpeg" alt="Video 2 Thumbnail">
+          <span class="play-icon">▶</span>
+          <figcaption>11.08.21 Having my first bath.</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 3
+      ============================== -->
+      <a 
+        href="IMG_7192.MOV"
+        class="glightbox"
+        data-type="video"
+        data-title="Woot wooot!"
+      >
+        <figure>
+          <img src="IMG_86DF67D51BBC-1.jpeg" alt="Video 3 Thumbnail">
+          <span class="play-icon">▶</span>
+          <figcaption>11.21.21 I turned 1 month old.</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 4
+      ============================== -->
+      <a 
+        href="IMG_8364.MOV"
+        class="glightbox"
+        data-type="video"
+        data-title="Sitting pretty..."
+      >
+        <figure>
+          <img src="IMG_DC5A245D506E-1.jpeg" alt="Video 4 Thumbnail">
+          <span class="play-icon">▶</span>
+          <figcaption>1.26.22 Day 1 of trying to sit up.</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 5
+      ============================== -->
+      <a 
+        href="IMG_8370.mov"
+        class="glightbox"
+        data-type="video"
+        data-title="My cousin Donald holding and inspecting me for the first time."
+      >
+        <figure>
+          <img src="IMG_B44367907D43-1.jpeg" alt="Video 5 Thumbnail">
+          <span class="play-icon">▶</span>
+          <figcaption>1.28.22 With Donald</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 6
+      ============================== -->
+      <a 
+        href="IMG_8476.MOV"
+        class="glightbox"
+        data-type="video"
+        data-title="Hangin' with the fam"
+      >
+        <figure>
+          <img src="IMG_F03C0228494F-1.jpeg" alt="Video 6 Thumbnail">
+          <span class="play-icon">▶</span>
+          <figcaption>2.14.22 My first Valentine's Day</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 7
+      ============================== -->
+      <a 
+        href="IMG_0728.MOV"
+        class="glightbox"
+        data-type="video"
+        data-title="Oh happy day"
+      >
+        <figure>
+          <img src="IMG_65AE3ED297DE-1.jpeg" alt="Video 7 Thumbnail">
+          <span class="play-icon">▶</span>
+          <figcaption>4.21.22 I turned 6 months old</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 8 – Christmas Photoshoot
+      ============================== -->
+      <a 
+        href="firstxmas.mov"
+        class="glightbox"
+        data-type="video"
+        data-title="My first Christmas"
+      >
+        <figure>
+          <img src="xmas.jpeg" alt="Pic of me, my brother, mother, and father">
+          <span class="play-icon">▶</span>
+          <figcaption>My first Christmas photoshoot with family</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 9 – Christmas Day
+      ============================== -->
+      <a 
+        href="xmasDay.mov"
+        class="glightbox"
+        data-type="video"
+        data-title="Experiencing my first Christmas"
+      >
+        <figure>
+          <img src="xmasDay.jpeg" alt="My father holding me on Christmas">
+          <span class="play-icon">▶</span>
+          <figcaption>Experiencing my first Christmas with family</figcaption>
+        </figure>
+      </a>
+
+
+      <!-- ===========================
+           VIDEO 10 – Train Ride
+      ============================== -->
+      <a 
+        href="firstTrainRide.mov"
+        class="glightbox"
+        data-type="video"
+        data-title="My first train ride"
+      >
+        <figure>
+          <img src="TrainRide.jpeg" alt="Dad, mom, and I on the train">
+          <span class="play-icon">▶</span>
+          <figcaption>On my first train ride with Mom and Dad</figcaption>
+        </figure>
+      </a>
+
+      <!-- Clears layout gaps depending on CSS flex/grid -->
+      <div class="clear"></div>
+
+    </div> <!-- end .video-grid -->
+
+  </main>
+
+
+  <!-- ===========================
+       GLIGHTBOX INIT SCRIPT
+  ============================== -->
+  <script>
+    /* Initializes GLightbox and sets options */
+    const lightbox = GLightbox({
+      selector: '.glightbox',      // All elements with this class will trigger the lightbox
+      touchNavigation: true,       // Swipe left/right on mobile
+      loop: true,                  // Repeats videos in a loop
+      autoplayVideos: true,        // Auto-plays video when opened
+      keyboardNavigation: true,    // Allows arrow key navigation
+      slideEffect: 'fade',         // Fade transition between slides
+
+      onOpen: () => {
+        console.log('Lightbox is open');
+      },
+
+      onClose: () => {
+        console.log('Lightbox is closed');
+      }
+    });
+  </script>
+
+
+  <!-- ===========================
+       FOOTER
+  ============================== -->
+  <footer>
+    <!-- Uses HTML character codes for copyright + bullet -->
+    <p>&#169; Tijani™ 2025 &#8226; All rights reserved</p>
+  </footer>
+
+
+</body>
+</html>

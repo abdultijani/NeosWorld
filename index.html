@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Proper scaling for mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Browser tab title -->
+  <title>Neo's World</title>
+
+  <!-- Preconnect hints for faster Google Fonts loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Main site fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===============================
+     HEADER WITH WIGGLE TITLE
+==================================-->
+<header>
+  <a href="index.html" class="header-link">
+
+    <!-- Decorative title with animated icons -->
+    <h1 class="marquee-text">
+      <span class="wiggle">🚘</span>
+      <span class="wiggle">👶🏾</span>
+      N e o's
+      <span class="wiggle">🚗</span>
+      W o r l d
+      <span class="wiggle">👶🏾</span>
+      <span class="wiggle">🚘</span>
+    </h1>
+
+  </a>
+</header>
+
+
+
+<!-- ===============================
+     MAIN CONTENT AREA
+==================================-->
+<main class="container">
+
+  <!-- ===============================
+       ROW 1 — Navigation Menu
+  ==================================-->
+  <nav class="main-nav">
+
+    <!-- Active Home link -->
+    <a href="index.html" class="active">
+      <div class="box five nav-animate"><span class="nav-wiggle">🏠 Home 🏠</span></div>
+    </a>
+
+    <a href="AboutMe.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">👶🏾 About Me 👶🏾</span></div>
+    </a>
+
+    <a href="PhotoGallery.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">📸 Photo Gallery 📷</span></div>
+    </a>
+
+    <a href="Milestones.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">🏆 Milestones 🥇</span></div>
+    </a>
+
+    <a href="Favorites.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">⭐ Favorites ❤️</span></div>
+    </a>
+
+    <!-- Float clearing -->
+    <div class="clear"></div>
+  </nav>
+
+
+
+  <!-- ===============================
+       ROW 2 — Three Animated Boxes
+       (Scrolling and bouncing photos)
+  ==================================-->
+
+  <!-- Left image scrolling to the right -->
+  <div class="box four large-font scroll-right">
+    <a href="PhotoGallery.html">
+      <img src="IMG_3981.jpg"
+           alt="Neo looking up with right hand in pocket"
+           class="home-gallery-img">
+    </a>
+    <span class="nav-wiggle">N</span>
+  </div>
+
+  <!-- Center bouncing image (JS animated camera roll) -->
+  <div class="box four large-font bounce">
+    <a href="PhotoGallery.html" class="box--four">
+      <img id="cameraRoll"
+           src="IMG_3981.jpg"
+           alt="Camera Roll"
+           class="home-gallery-img">
+    </a>
+    <span class="nav-wiggle">E</span>
+  </div>
+
+  <!-- Right image scrolling to the left -->
+  <div class="box four large-font scroll-left">
+    <a href="PhotoGallery.html">
+      <img src="IMG_3988.jpg"
+           alt="Neo looking up with right arm in pocket and left arm swinging"
+           class="home-gallery-img">
+    </a>
+    <span class="nav-wiggle">O</span>
+  </div>
+
+
+
+  <!-- ===============================
+       RESPONSIVE CAMERA-ROLL STRIP
+       Continuous horizontal scrolling images
+  ==================================-->
+  <div class="box four">
+
+    <a href="PhotoGallery.html">
+
+      <div class="reel-container">
+        <div class="reel-track">
+
+          <!-- First set of photos -->
+          <img src="IMG_3981.jpg" alt="Camera Roll">
+          <img src="schoolPic2.jpeg" alt="Camera Roll">
+          <img src="IMG_3988.jpg" alt="Camera Roll">
+          <img src="IMG_3979.jpg" alt="Camera Roll">
+          <img src="IMG_3978.jpg" alt="Camera Roll">
+          <img src="IMG_3986.jpg" alt="Camera Roll">
+
+
+
+          <!-- Duplicated for seamless infinite scrolling -->
+          <img src="IMG_3981.jpg" alt="Camera Roll">
+          <img src="IMG_3982.jpg" alt="Camera Roll">
+          <img src="IMG_3988.jpg" alt="Camera Roll">
+          <img src="IMG_3979.jpg" alt="Camera Roll">
+          <img src="IMG_3978.jpg" alt="Camera Roll">
+          <img src="IMG_3986.jpg" alt="Camera Roll">
+
+        </div>
+      </div>
+    </a>
+
+    <span class="nav-wiggle">T i j a n i</span>
+  </div>
+
+  <div class="clear"></div>
+
+
+
+  <!-- ===============================
+       ROW 3 — Full Width Welcome Box
+  ==================================-->
+  <div class="box full">
+    <a href="AboutMe.html">
+      <div>
+        <span class="nav-wiggle">
+          🚕 🚁 🚘 🚍 🚀 🚔 🚖 ❤️ 🚚 🛻 🏀 🚌 👶🏾 
+          Welcome to Neo's World 
+          👶🏾 🏎️ 🚓 🚑 🚒 ✏️ 📚 🍔 🧃 🎮 ⚽ 🚘 🚙
+        </span>
+      </div>
+    </a>
+  </div>
+
+  <div class="clear"></div>
+
+</main>
+
+
+
+<!-- ===============================
+     FOOTER WITH COPYRIGHT
+==================================-->
+<footer>
+  <p>&#169; Tijani™ 2025 &#8226; All rights reserved</p>
+</footer>
+
+
+
+<!-- ===============================
+     JS ANIMATION 1:
+     Sliding cameraRoll image (center box)
+==================================-->
+<script>
+  const img = document.getElementById('cameraRoll');
+
+  // List of images to cycle through
+  const images = [
+    'IMG_3981.jpg',
+    'IMG_3982.jpg',
+    
+
+   
+    'IMG_3979.jpg',
+    'IMG_3982.jpg',
+
+    'IMG_3979.jpg'
+
+  ];
+
+  let index = 0;
+
+  /* Add required styling via JS
+     to ensure animation consistency */
+  img.style.position = 'relative';
+  img.style.transition = 'transform 0.6s ease-in-out';
+  img.style.display = 'block';
+
+  setInterval(() => {
+    // Slide image left (exit)
+    img.style.transform = 'translateX(-100%)';
+
+    setTimeout(() => {
+      // While offscreen, swap to next image
+      index = (index + 1) % images.length;
+      img.src = images[index];
+
+      // Snap to right side instantly (no animation)
+      img.style.transition = 'none';
+      img.style.transform = 'translateX(100%)';
+
+      requestAnimationFrame(() => {
+        // Restore animation and slide back to center
+        img.style.transition = 'transform 0.6s ease-in-out';
+        img.style.transform = 'translateX(0)';
+      });
+
+    }, 600); // Matches 0.6s transition
+  }, 2000); // Change image every 2 seconds
+</script>
+
+
+
+<!-- ===============================
+     JS ANIMATION 2:
+     Restart scrolling animation
+     for the camera-roll reel
+==================================-->
+<script>
+window.addEventListener("load", () => {
+  const reelTrack = document.querySelector(".reel-track");
+
+  /* Force restart of CSS animation to ensure
+     smooth loop even after refresh */
+
+  reelTrack.style.animation = "none";
+  void reelTrack.offsetWidth; // triggers reflow
+  reelTrack.style.animation = "reelScroll 25s linear infinite alternate";
+});
+</script>
+
+</body>
+</html>

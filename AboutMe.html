@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Allow proper scaling on mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Browser tab text -->
+  <title>Neo's World</title>
+
+  <!-- Preconnections to speed up Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Main fonts used across the site -->
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Additional custom fonts (Jolly Lodger, Flavors, Advent Pro) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Flavors&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Body class allows About Me–specific styling -->
+<body class="about-page">
+
+<!-- ===========================
+     HEADER WITH SITE TITLE
+=============================== -->
+<header>
+  <a href="index.html" class="header-link">
+
+    <!-- Wiggle-animated icons + title -->
+    <h1 class="marquee-text">
+      <span class="wiggle">🚘</span>
+      <span class="wiggle">👶🏾</span>
+      N e o's
+      <span class="wiggle">🚗</span>
+      W o r l d
+      <span class="wiggle">👶🏾</span>
+      <span class="wiggle">🚘</span>
+    </h1>
+
+  </a>
+</header>
+
+
+
+<!-- ===========================
+     MAIN SECTION
+=============================== -->
+<main class="container">
+
+  <!-- ===========================
+       5-BOX NAVIGATION BAR
+  ============================== -->
+  <nav class="main-nav">
+
+    <a href="index.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">🏠 Home 🏠</span></div>
+    </a>
+
+    <!-- Active page: About Me -->
+    <a href="AboutMe.html" class="active">
+      <div class="box five nav-animate"><span class="nav-wiggle">👶🏾 About Me 👶🏾</span></div>
+    </a>
+
+    <a href="PhotoGallery.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">📸 Photo Gallery 📷</span></div>
+    </a>
+
+    <a href="Milestones.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">🏆 Milestones 🥇</span></div>
+    </a>
+
+    <a href="Favorites.html">
+      <div class="box five nav-animate"><span class="nav-wiggle">⭐ Favorites ❤️</span></div>
+    </a>
+
+    <!-- Clear floats if used in CSS -->
+    <div class="clear"></div>
+  </nav>
+
+
+
+  <!-- ===========================
+       ABOUT ME CONTENT SECTION
+  ============================== -->
+  <section class="about-me">
+    <div class="about-container">
+
+      <!-- Left column: text -->
+      <div class="about-text">
+
+        <img src="tophalf.jpeg" alt="school pic of Neo" class="schoolPic"><a href="PhotoGallery.html" class="box--four"><img src="tophalf2.jpeg" alt="school pic of Neo" class="schoolPic2"></a>
+
+        <h2> 👶🏾 About Me</h2>
+        <!-- Personal details list -->
+        <ul>
+          <li>🧸 <strong>Name:</strong> My name is Neo Maliki Chidera Heija Tijani.</li>
+          <li>🎂 <strong>Age:</strong> I am 4 years old.</li>
+          <li>🏠 <strong>Location:</strong> I live in Boston, Massachusetts.</li>
+          <li>❤️ <strong>Loves:</strong> I love burgers, cars, trucks, snacks, and playing on my tablet.</li>
+          <li>👎🏾 <strong>Not a Fan Of:</strong> Bedtimes</li>
+        </ul>
+
+        <h3> 🎨 What I Do Best</h3>
+        <ul>
+          <li>Sing along Kpop demon hunters songs.</li>
+          <li>Ask <em>why?</em> (a lot!)</li>
+          <li>Run super fast (even inside...)</li>
+          <li>Dance when no one’s looking (or when they are!)</li>
+        </ul>
+
+        <h3> 🧠 Fun Facts</h3>
+        <ul>
+          <li>I can say my full name</li>
+          <li>I once ate three pancakes in a row</li>
+          <li>I love playing with my friends at school</li>
+        </ul>
+
+        <h3> 🚗 My Big Dreams</h3>
+        <ul>
+          <li>When I grow up, I might be a police officer, a superhero, or someone who drives a racing car.</li>
+        </ul>
+
+        <h3> 💬 Favorite Things to Say</h3>
+        <!-- Cute quotes block -->
+        <blockquote>
+          “Watch this!”<br>
+          “One more time!”<br>
+          “Can I have a snack?”
+        </blockquote>
+
+        <h3> ✨ My family</h3>
+
+        <!-- Family images displayed with built-in gallery styling -->
+        <figure>
+          <img src="IMG_4077.jpeg" alt="A pic of me, Mommy, and Daddy." class="lightbox-image">
+          <figcaption>Me, Mommy, and Daddy</figcaption>
+        </figure>
+
+        <figure>
+          <img src="IMG_8087.jpeg" alt="A group pic of my family" class="lightbox-image">
+          <figcaption>A group picture of my family for my first Christmas</figcaption>
+        </figure>
+
+      </div>
+
+
+
+      <!-- ===========================
+           RIGHT SIDE IMAGE (Camera roll)
+           This image swaps between two photos
+           every 0.5 seconds via JavaScript
+      ============================== -->
+      <div class="box four">
+        <p>
+          <a href="PhotoGallery.html" class="box--four">
+            <img id="cameraRoll"
+                 src="IMG_3981.jpg"
+                 alt="Camera Roll"
+                 class="home-gallery-img">
+          </a>
+        </p>
+      </div>
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+</main>
+
+
+
+<!-- ===========================
+     IMAGE ANIMATION SCRIPT
+     (Changes cameraRoll image every 0.5 seconds)
+=============================== -->
+<script>
+  const img = document.getElementById('cameraRoll');
+
+  // Image file names to alternate between
+  const images = ['IMG_3981.jpg', 'IMG_3982.jpg'];
+
+  let index = 0;
+
+  // Switch image every 500ms
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    img.src = images[index];
+  }, 500);
+</script>
+
+
+
+<!-- ===========================
+     FOOTER
+=============================== -->
+<footer>
+  <!-- © symbol + separator dot -->
+  <p>&#169; Tijani™ 2025 &#8226; All rights reserved</p>
+</footer>
+
+</body>
+</html>

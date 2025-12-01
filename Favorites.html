@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Sets character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Title shown in browser tab -->
+  <title>Neo's World</title>
+
+  <!-- Preconnecting improves font-loading performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Font: Advent Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Additional Google Fonts: Kablammo & Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===========================
+       HEADER & PAGE TITLE
+  ============================== -->
+  <header>
+    <!-- Clicking header returns user to homepage -->
+    <a href="index.html" class="header-link">
+
+      <!-- Marquee-like animated title text -->
+      <h1 class="marquee-text">
+        <span class="wiggle">🚘</span> <span class="wiggle">👶🏾</span> 
+        N e o's 
+        <span class="wiggle">🚗</span> W o r l d 
+        <span class="wiggle">👶🏾</span> <span class="wiggle">🚘</span>
+      </h1>
+
+    </a>
+  </header>
+
+
+  <!-- ===========================
+       MAIN CONTENT CONTAINER
+  ============================== -->
+  <main class="container">
+
+    <!-- ===========================
+         NAVIGATION MENU (5 Boxes)
+    ============================== -->
+    <nav class="main-nav">
+
+      <!-- Each nav item is wrapped in a link, containing a styled div -->
+      <a href="index.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">🏠 Home 🏠</span>
+        </div>
+      </a>
+
+      <a href="AboutMe.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">👶🏾 About Me 👶🏾</span>
+        </div>
+      </a>
+
+      <a href="PhotoGallery.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">📸 Photo Gallery 📷</span>
+        </div>
+      </a>
+
+      <a href="Milestones.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">🏆 Milestones 🥇</span>
+        </div>
+      </a>
+
+      <!-- Active page highlighted -->
+      <a href="Favorites.html" class="active">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">⭐ Favorites ❤️</span>
+        </div>
+      </a>
+
+      <!-- Clears floating elements if used in CSS layout -->
+      <div class="clear"></div>
+    </nav>
+
+
+
+    <!-- ===========================
+         VIDEO TABLE SECTION
+    ============================== -->
+    <div class="table-wrapper">
+      <table>
+
+        <!-- Blank caption (optional) -->
+        <caption></caption>
+
+        <thead>
+          <tr>
+            <th></th>
+            <th>My Favorite YouTube Videos</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <!-- ===========================
+               ROW 1 – FIRST 3 VIDEOS
+          ============================== -->
+          <tr>
+            <td>
+              <div class="video-container">
+                <!-- Embedded YouTube video -->
+                <iframe 
+                  src="https://www.youtube.com/embed/ZJMr4X5BaeI?si=4SAP2M3tmhPckil-" 
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </td>
+
+            <td>
+              <div class="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/s65D05t18Es?si=djvMHJyfd_YPXz_D" 
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </td>
+
+            <td>
+              <div class="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/6jsoS6KRQiw?si=NJWSOfNNSB2XrxnS" 
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </td>
+          </tr>
+
+
+          <!-- ===========================
+               ROW 2 – NEXT 3 VIDEOS
+          ============================== -->
+          <tr>
+            <td>
+              <iframe 
+                src="https://www.youtube.com/embed/46IpbQ_0FUw?si=fmMHVP-hJFWY3XS0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </td>
+
+            <td>
+              <iframe 
+                src="https://www.youtube.com/embed/DOMPU26i7Xw?si=QKZnqAL67YwTz8MN"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </td>
+
+            <td>
+              <iframe 
+                src="https://www.youtube.com/embed/-JStINmfSbk?si=IUlWAVOFvyoakZBC"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </td>
+          </tr>
+
+
+          <!-- ===========================
+               ROW 3 – LISTS (OL, UL, DL)
+          ============================== -->
+          <tr>
+            <td>
+              <!-- Ordered list example -->
+     <h3>How I Usually Spend My Day:</h3>            
+<ol>
+  
+  <li>Hug my teddy bear 🧸.</li>
+  <li>Eat cereal with chocolate milk 🥣.</li>
+  <li>Put on my dinosaur shirt 🦖.</li>
+  <li>Play with my toy car 🚗.</li>
+  <li>Play with my friend 🤗.</li>
+  <li>Draw animals 🐶🐱.</li>
+  <li>Have cookies and juice 🍪🥤.</li>
+  <li>Listen to my favorite song 🎵💃.</li>
+  <li>Watch a cartoon 📺.</li>
+  <li>Go to bed with my blanket and teddy 🌙.</li>
+</ol>
+
+
+            </td>
+
+            <td>
+              <!-- Unordered list example -->
+<ul>
+  <li>Favorite color: Blue (sometimes green!)</li>
+  <li>Favorite toy: My teddy bear</li>
+  <li>Favorite food: Mac and cheese</li>
+  <li>Favorite game: Hide and seek</li>
+  <li>Favorite animal: Doggies</li>
+  <li>Favorite drink: Chocolate milk</li>
+  <li>Favorite song: Twinkle Twinkle Little Star</li>
+</ul>
+
+            </td>
+
+            <td>
+              <!-- Description list example -->
+              <dl>
+  <dt>Color</dt>
+  <dd>Blue because it’s like the sky!</dd>
+
+  <dt>Animal</dt>
+  <dd>Doggies because they are fluffy and fun.</dd>
+
+  <dt>Snack</dt>
+  <dd>Cookies because they taste sweet.</dd>
+
+  <dt>Toy</dt>
+  <dd>Teddy bear because he hugs me back.</dd>
+
+  <dt>Cartoon</dt>
+  <dd>Peppa Pig because it’s funny.</dd>
+</dl>
+
+            </td>
+          </tr>
+
+
+          <!-- ===========================
+               ROW 4 – SOCIAL MEDIA LINK
+          ============================== -->
+          <tr>
+            <td>Social Media:</td>
+
+            <td>Check out my Instagram</td>
+
+            <td>
+              <!-- Instagram profile link with image logo -->
+              <a href="https://www.instagram.com/malikitj/" target="_blank" rel="noopener noreferrer">
+                <img src="insta.jpeg" alt="instagram logo" class="homegalleryimg">
+              </a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- Decorative animated heading -->
+    <h2 class="typewriter-loop">
+      ✏️ 📚 ✏️ 📚 🐘 🦁 🐸 🐼 My favorite videos on YouTube 🐼 🐸 🦁 🐘 ✏️ 📚 ✏️ 📚
+    </h2>
+
+  </main>
+
+
+  <!-- ===========================
+       FOOTER
+  ============================== -->
+  <footer>
+    <!-- Includes trademark symbol -->
+    <p>© Tijani™ 2025. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

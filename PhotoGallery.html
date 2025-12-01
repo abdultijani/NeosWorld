@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Makes page responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Browser tab title -->
+  <title>Neo's World</title>
+
+  <!-- Preload Google Fonts to speed up loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Font families used in page styling -->
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===========================
+       HEADER & SITE TITLE
+  ============================== -->
+  <header>
+    <!-- Clicking header title returns to homepage -->
+    <a href="index.html" class="header-link">
+
+      <!-- Animated, colorful title text -->
+      <h1 class="marquee-text">
+        <span class="wiggle">🚘</span>
+        <span class="wiggle">👶🏾</span>
+        N e o's
+        <span class="wiggle">🚗</span>
+        W o r l d
+        <span class="wiggle">👶🏾</span>
+        <span class="wiggle">🚘</span>
+      </h1>
+
+    </a>
+  </header>
+
+
+  <!-- ===========================
+       MAIN CONTENT
+  ============================== -->
+  <main class="container">
+
+    <!-- ===========================
+         NAVIGATION MENU (5 Pages)
+    ============================== -->
+    <nav class="main-nav">
+
+      <a href="index.html">
+        <div class="box five nav-animate"><span class="nav-wiggle">🏠 Home 🏠</span></div>
+      </a>
+
+      <a href="AboutMe.html">
+        <div class="box five nav-animate"><span class="nav-wiggle">👶🏾 About Me 👶🏾</span></div>
+      </a>
+
+      <!-- PhotoGallery.html is marked active -->
+      <a href="PhotoGallery.html" class="active">
+        <div class="box five nav-animate"><span class="nav-wiggle">📸 Photo Gallery 📷</span></div>
+      </a>
+
+      <a href="Milestones.html">
+        <div class="box five nav-animate"><span class="nav-wiggle">🏆 Milestones 🥇</span></div>
+      </a>
+
+      <a href="Favorites.html">
+        <div class="box five nav-animate"><span class="nav-wiggle">⭐ Favorites ❤️</span></div>
+      </a>
+
+      <!-- Prevents layout issues with floats/flex depending on CSS -->
+      <div class="clear"></div>
+    </nav>
+
+
+
+    <!-- ===========================
+         PHOTO GALLERY GRID
+         Each <figure> contains:
+         - A thumbnail image
+         - Caption text
+         - Lightbox ability (custom JS)
+    ============================== -->
+    <div class="gallery">
+
+      <!-- Example figure item -->
+      <figure>
+        <img src="Image-1.jpg" alt="I just had a nice haircut" class="lightbox-image">
+        <figcaption>Learning how to write my name</figcaption>
+      </figure>
+
+      <!-- Gallery items continue… -->
+      <figure>
+        <img src="IMG_0506.jpeg" alt="I just had a nice haircut" class="lightbox-image">
+        <figcaption>At my friend, Liam's</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_0507.jpeg" alt="kids playing" class="lightbox-image">
+        <figcaption>Playing at Liam's</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_0512.jpeg" alt="kids playing" class="lightbox-image">
+        <figcaption>Fun times</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Photo_2.jpeg" alt="kid posing for picture" class="lightbox-image">
+        <figcaption>My buddy, Liam and I</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Photo.jpeg" alt="two kids posing" class="lightbox-image">
+        <figcaption>My buddy, Liam and I</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_2362.jpeg" alt="3 kids posing for a picture" class="lightbox-image">
+        <figcaption>Hello!</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_2359.jpeg" alt="kid walking away" class="lightbox-image">
+        <figcaption>Fun times at the zoo</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_0518.jpeg" alt="kids in a group picture" class="lightbox-image">
+        <figcaption>Fun with friends</figcaption>
+      </figure>
+
+      <!--  NEW GALLERY SECTION BEGINS  -->
+
+      <figure>
+        <img src="IMG_3343.jpeg" alt="kid eating breakfast" class="lightbox-image">
+        <figcaption>Breakfast before school</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3349.jpeg" alt="kid headed to school" class="lightbox-image">
+        <figcaption>Heading out to school</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3294.jpeg" alt="holiday portrait" class="lightbox-image">
+        <figcaption>Seasons greetings</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3298.jpeg" alt="holiday portrait" class="lightbox-image">
+        <figcaption>Seasons greetings</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3413.jpeg" alt="kid looking in the distance" class="lightbox-image">
+        <figcaption>Hey there!</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3409.jpeg" alt="kid with arms crossed" class="lightbox-image">
+        <figcaption>Hello!</figcaption>
+      </figure>
+
+      <!-- Section: Haircut photos -->
+      <figure>
+        <img src="IMG_3982.jpg" alt="new haircut" class="lightbox-image">
+        <figcaption>I just had a nice haircut</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3981.jpg" alt="child outdoors" class="lightbox-image">
+        <figcaption>Enjoying the weather</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3979.jpg" alt="hair design closeup" class="lightbox-image">
+        <figcaption>What do you think about my hair design?</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3978.jpg" alt="smiling child" class="lightbox-image">
+        <figcaption>Oh happy day</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3986.jpg" alt="kid outside" class="lightbox-image">
+        <figcaption>Outside activities</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3988.jpg" alt="kid posing confidently" class="lightbox-image">
+        <figcaption>I'm outside</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_3291.jpeg" alt="kid ready for school" class="lightbox-image">
+        <figcaption>Ready for school</figcaption>
+      </figure>
+
+      <!-- More friend group pictures -->
+      <figure>
+        <img src="IMG_4128.jpg" alt="kid smiling" class="lightbox-image">
+        <figcaption>Cheezing for a pic</figcaption>
+      </figure>
+
+      <figure>
+        <img src="landn.jpg" alt="kids playing at the zoo" class="lightbox-image">
+        <figcaption>Playing with my friend, Liam</figcaption>
+      </figure>
+
+      <figure>
+        <img src="zooed.jpg" alt="Liam and Kenedy" class="lightbox-image">
+        <figcaption>At the zoo with Liam and Kenedy</figcaption>
+      </figure>
+
+      <figure>
+        <img src="zooing.jpg" alt="Kids at the zoo" class="lightbox-image">
+        <figcaption>At the zoo with Liam and Kenedy</figcaption>
+      </figure>
+
+      <figure>
+        <img src="zooBench.jpg" alt="kids sitting at the zoo" class="lightbox-image">
+        <figcaption>At the zoo with Liam and Kenedy</figcaption>
+      </figure>
+
+      <figure>
+        <img src="playing.jpg" alt="kids playing" class="lightbox-image">
+        <figcaption>Playing with my friend, Liam</figcaption>
+      </figure>
+
+      <figure>
+        <img src="usThree.jpg" alt="Kenedy, Neo, and Liam" class="lightbox-image">
+        <figcaption>My friends, Kenedy and Liam</figcaption>
+      </figure>
+
+      <figure>
+        <img src="walkers.jpg" alt="kids walking" class="lightbox-image">
+        <figcaption>My friends, Kenedy and Liam</figcaption>
+      </figure>
+
+      <!-- Family photos -->
+      <figure>
+        <img src="IMG_4077.jpeg" alt="Neo with parents" class="lightbox-image">
+        <figcaption>Me, Mommy, and Daddy</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_8087.jpeg" alt="family Christmas portrait" class="lightbox-image">
+        <figcaption>A group picture of my family for my first Christmas</figcaption>
+        
+      </figure>
+
+      <div class="clear"></div>
+    </div>
+
+
+
+    <!-- ===========================
+         CUSTOM LIGHTBOX (Modal)
+         Appears when an image is clicked
+    ============================== -->
+    <div id="lightbox" role="dialog" tabindex="-1" onclick="closeLightbox()">
+
+      <!-- Previous button (left side) -->
+      <button id="prevBtn" class="nav-btn"
+              onclick="event.stopPropagation(); showPrevImage()">←</button>
+
+      <!-- Main displayed image -->
+      <img id="lightbox-img" src="placeholder.jpg" alt="Enlarged Image">
+
+      <!-- Next button (right side) -->
+      <button id="nextBtn" class="nav-btn"
+              onclick="event.stopPropagation(); showNextImage()">→</button>
+
+      <!-- Small hint for mobile swipe gesture -->
+      <div class="swipe-hint">👆 Swipe to navigate</div>
+    </div>
+
+
+
+    <!-- ===========================
+         LIGHTBOX JAVASCRIPT LOGIC
+    ============================== -->
+    <script>
+      let currentIndex = 0;   // Track which image is currently shown
+      let images = [];        // Stores image references for navigation
+
+      // Once the page loads, attach click events to all gallery images
+      document.addEventListener('DOMContentLoaded', () => {
+        images = Array.from(document.querySelectorAll('.lightbox-image'));
+
+        // Each image opens the lightbox with its index
+        images.forEach((img, index) => {
+          img.addEventListener('click', () => openLightbox(index));
+        });
+      });
+
+      // Opens the overlay lightbox and shows selected image
+      function openLightbox(index) {
+        currentIndex = index;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        lightboxImg.src = images[index].src;  // Display selected image
+        lightboxImg.alt = images[index].alt;  // Preserve accessibility description
+
+        lightbox.style.display = 'flex';      // Makes modal visible
+        lightbox.focus();                     // Keyboard navigation enabled
+      }
+
+      // Close the lightbox overlay
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+
+      // Show next image (wrap around to first)
+      function showNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        openLightbox(currentIndex);
+      }
+
+      // Show previous image (wrap around to last)
+      function showPrevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        openLightbox(currentIndex);
+      }
+
+      /* ============
+         KEYBOARD SUPPORT
+         - ESC closes
+         - ArrowLeft shows previous
+         - ArrowRight shows next
+      =============== */
+      document.addEventListener('keydown', function (e) {
+        const isOpen = document.getElementById('lightbox').style.display === 'flex';
+        if (!isOpen) return;
+
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') showNextImage();
+        if (e.key === 'ArrowLeft') showPrevImage();
+      });
+
+      /* ============
+         TOUCH SWIPE SUPPORT
+         Allows left/right swiping on mobile devices
+      =============== */
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      const lightbox = document.getElementById('lightbox');
+
+      // When finger touches screen
+      lightbox.addEventListener('touchstart', function (e) {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      // When finger lifts
+      lightbox.addEventListener('touchend', function (e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleGesture();
+      }, { passive: true });
+
+      // Detect swipe direction
+      function handleGesture() {
+        const swipeDistance = touchStartX - touchEndX;
+
+        // Small taps shouldn't trigger navigation
+        if (Math.abs(swipeDistance) < 30) return;
+
+        // Swipe left → show next
+        if (swipeDistance > 0) {
+          showNextImage();
+        }
+        // Swipe right → show previous
+        else {
+          showPrevImage();
+        }
+      }
+    </script>
+
+  </main>
+
+
+  <!-- ===========================
+       FOOTER
+  ============================== -->
+  <footer>
+    <!-- Using character entities for © and • -->
+    <p>&#169; Tijani™ 2025 &#8226; All rights reserved</p>
+  </footer>
+
+</body>
+</html>
