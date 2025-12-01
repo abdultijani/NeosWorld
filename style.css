@@ -1031,3 +1031,10 @@ border: 2px solid hsl(0, 0%, 100%);
   background-color: #ff8b06; /* lighter shade on hover */
   border: 2px solid hsl(0, 0%, 100%);
 }
+
+@media (max-width: 600px) {
+  .typewriter-loop {
+    white-space: normal;   /* allow wrapping */
+    word-break: break-word; /* break long strings if needed */
+  }
+}
