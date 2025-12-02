@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Sets character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Title shown in browser tab -->
+  <title>Neo's World</title>
+
+  <!-- Preconnecting improves font-loading performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Font: Advent Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Additional Google Fonts: Kablammo & Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===========================
+       HEADER & PAGE TITLE
+  ============================== -->
+  <header>
+    <!-- Clicking header returns user to homepage -->
+    <a href="index.html" class="header-link">
+
+      <!-- Marquee-like animated title text -->
+      <h1 class="marquee-text">
+        <span class="wiggle">🚘</span> <span class="wiggle">👶🏾</span> 
+        N e o's 
+        <span class="wiggle">🚗</span> W o r l d 
+        <span class="wiggle">👶🏾</span> <span class="wiggle">🚘</span>
+      </h1>
+
+    </a>
+  </header>
+
+
+  <!-- ===========================
+       MAIN CONTENT CONTAINER
+  ============================== -->
+  <main class="container">
+
+    <!-- ===========================
+         NAVIGATION MENU (5 Boxes)
+    ============================== -->
+    <nav class="main-nav">
+
+      <!-- Each nav item is wrapped in a link, containing a styled div -->
+      <a href="index.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">🏠 Home 🏠</span>
+        </div>
+      </a>
+
+      <a href="AboutMe.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">👶🏾 About Me 👶🏾</span>
+        </div>
+      </a>
+
+      <a href="PhotoGallery.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">📸 Photo Gallery 📷</span>
+        </div>
+      </a>
+
+      <a href="Milestones.html">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">🏆 Milestones 🥇</span>
+        </div>
+      </a>
+
+      <!-- Active page highlighted -->
+      <a href="Favorites.html" class="active">
+        <div class="box five nav-animate">
+          <span class="nav-wiggle">⭐ Favorites ❤️</span>
+        </div>
+      </a>
+
+      <!-- Clears floating elements if used in CSS layout -->
+      <div class="clear"></div>
+    </nav>
+
+<article id="contentstart"> 
+    <h2>Your form has been submitted</h2>
+    <h3>You entered the following data:</h3>
+
+    <script>
+        // Get the query string without '?'
+        let formData = location.search.substring(1);
+
+        // Convert + to spaces
+        formData = formData.replace(/\+/g, " ");
+
+        // Decode URI characters
+        formData = decodeURIComponent(formData);
+
+        // Split into key=value pairs
+        const formArray = formData.split("&");
+
+        formArray.forEach(pair => {
+            if (!pair) return;                // skip completely empty entries
+
+            const [key, value] = pair.split("=");
+
+            if (value && value.trim() !== "") {
+                // only output if the value is not blank
+                document.write("<p>" + key + ": " + value + "</p>");
+            }
+        });
+    </script>
+</article>
+
+          <!-- ===========================
+       FOOTER
+  ============================== -->
+  <footer>
+    <!-- Includes trademark symbol -->
+    <p>© Tijani™ 2025. All rights reserved.</p>
+  </footer>
+
+      </div>
+   </body>
+</html>
