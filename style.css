@@ -1192,6 +1192,7 @@ fieldset {
 .submitbutton {
    margin-bottom: 0;
    text-align: center;
+   
 }
 
 /* field styles */
@@ -1241,4 +1242,6 @@ color: green;
 }
 
 
-
+#submitted-data p {
+    color: black;
+}
