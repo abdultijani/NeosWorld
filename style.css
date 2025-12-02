@@ -87,6 +87,7 @@ footer {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  
 }
 
 
@@ -1064,7 +1065,7 @@ border: 2px solid hsl(0, 0%, 100%);
 
 /* Base form layout */
 form {
-  max-width: 600px;      /* keeps form from becoming too wide */
+  max-width: 1100px;      /* keeps form from becoming too wide */
   margin: 0 auto;        /* centers form on large screens */
   padding: 20px;
   box-sizing: border-box;
