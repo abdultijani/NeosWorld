@@ -1065,11 +1065,12 @@ border: 2px solid hsl(0, 0%, 100%);
 
 /* Base form layout */
 form {
-  max-width: 1100px;      /* keeps form from becoming too wide */
+  max-width: 1040px;      /* keeps form from becoming too wide */
   margin: 0 auto;        /* centers form on large screens */
   padding: 20px;
   box-sizing: border-box;
   opacity: 70%;
+   border-radius: 36px;
 }
 
 /* Fieldset styling */
@@ -1093,7 +1094,7 @@ input[type="email"],
 input[type="tel"],
 textarea {
   width: 100%;             /* fill the container */
-  padding: 10px;
+  padding: 5px;
   margin-top: 5px;
   box-sizing: border-box;
   border: 1px solid #aaa;
@@ -1146,4 +1147,98 @@ input[type="submit"]:hover {
   color: #000000;   
   font-size: 2.8rem; 
 }
+
+
+
+
+
+
+
+
+
+/* form content */
+
+h2 {
+   margin: 0 2% 0.4em;
+   font-size: 1.8em;
+   font-weight: 700;
+}
+h3 {
+   margin: 1em 0 0.5em 2%;
+   font-size: 1.2em;
+   font-weight: bold;
+   color: green;
+}
+article p {
+   margin: 0 2% 0.4em;
+}
+
+/* form styles */
+form {
+   margin: 2%;
+   padding: 2%;
+   border: 2px solid rgb(250, 249, 249);
+   background-color: #ff9c78;
+   margin: 50px auto;
+}
+.form-instructions {
+   color: green;
+}
+
+/* fieldset styles */
+fieldset {
+   margin: 0 0 1em 1em;
+}
+.submitbutton {
+   margin-bottom: 0;
+   text-align: center;
+}
+
+/* field styles */
+input, textarea {
+   border: 1px solid #777;
+   padding: 0.2em;
+   font-size: 1em;
+}
+.contactinfo input {
+   position: absolute;
+   left: 4em;
+}
+#nameinput, #emailinput {
+   max-width: 25em;
+   width: 75%;
+}
+#phoneinput {
+   width: 50%;
+   max-width: 12em;
+}
+#notes {
+   width: 96%;
+   margin-top: 0.5em;
+   display: block;
+}
+
+.contactinfo input:valid {
+background-color: #d1f4bd;
+}
+input:focus, textarea:focus {
+background-color: yellow;
+}
+
+/* label styles */
+label {
+   font-size: 1em;
+}
+.contactinfo label {
+   margin: 0.7em 0;
+   display: block;
+   position: relative;
+}
+
+.contactinfo label:before {
+content: "* ";
+color: green;
+}
+
+
 
